@@ -1,8 +1,8 @@
-package com.damianfanaro.coding.practice.string;
+package com.damianfanaro.coding.practice.string.permutation;
 
 import static com.damianfanaro.coding.practice.SystemOutUtil.println;
 
-public class StringPermutationWithRecursion {
+public class FindPermutationsWithRecursion {
 
     private static final String INITIAL_PREFIX = "";
 

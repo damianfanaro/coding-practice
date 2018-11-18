@@ -1,4 +1,4 @@
-package com.damianfanaro.coding.practice.bracket;
+package com.damianfanaro.coding.practice.string.bracket;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

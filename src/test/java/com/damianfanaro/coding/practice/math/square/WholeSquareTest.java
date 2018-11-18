@@ -1,4 +1,4 @@
-package com.damianfanaro.coding.practice.square;
+package com.damianfanaro.coding.practice.math.square;
 
 import org.junit.jupiter.api.Test;
 

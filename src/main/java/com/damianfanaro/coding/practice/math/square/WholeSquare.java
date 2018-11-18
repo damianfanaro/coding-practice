@@ -1,6 +1,8 @@
-package com.damianfanaro.coding.practice.square;
+package com.damianfanaro.coding.practice.math.square;
 
 import java.util.Scanner;
+
+import static com.damianfanaro.coding.practice.SystemOutUtil.println;
 
 /**
  * An integer P is a whole square if it is a square of some integer Q, i.e. if P = Q * Q.
@@ -24,6 +26,18 @@ import java.util.Scanner;
  * @author dfanaro
  */
 class WholeSquare {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int numberOfTestCases = scan.nextInt();
+        scan.nextLine();
+        for (int testCase = 0; testCase < numberOfTestCases; testCase++) {
+            String[] newTestCase = scan.nextLine().split(" ");
+            int a = Integer.valueOf(newTestCase[0]);
+            int b = Integer.valueOf(newTestCase[1]);
+            println(WholeSquare.solution(a, b));
+        }
+    }
 
     static int solutionFormula(int A, int B) {
         int absA = A == Integer.MIN_VALUE ? 0 : Math.abs(A);
@@ -56,18 +70,6 @@ class WholeSquare {
             current++;
         }
         return totalWholeSquares;
-    }
-
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int numberOfTestCases = scan.nextInt();
-        scan.nextLine();
-        for (int testCase = 0; testCase < numberOfTestCases; testCase++) {
-            String[] newTestCase = scan.nextLine().split(" ");
-            int a = Integer.valueOf(newTestCase[0]);
-            int b = Integer.valueOf(newTestCase[1]);
-            System.out.println(WholeSquare.solution(a, b));
-        }
     }
 
 }

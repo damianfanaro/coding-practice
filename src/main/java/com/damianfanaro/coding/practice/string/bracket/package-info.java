@@ -27,4 +27,4 @@
  *
  * @author dfanaro
  */
-package com.damianfanaro.coding.practice.bracket;
+package com.damianfanaro.coding.practice.string.bracket;
